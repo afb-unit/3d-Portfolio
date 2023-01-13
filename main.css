@@ -597,13 +597,13 @@ textarea {
     width: 100%;
     height: 100vh;
     overflow-y: none;
-    scroll-snap-type: none;
+    scroll-snap-type: y mandatory;
   }
 
   section {
     width: 100%;
     height: 100vh;
-    scroll-snap-align: none;
+    scroll-snap-align: start;
   }
 
   #preloader {
@@ -672,7 +672,7 @@ textarea {
     width: 50px;
     margin-left: 15px;
     margin-right: 26px;
-    margin-top: 30px;
+    margin-top: 33px;
   }
 
   .navel ul li a.active {
@@ -724,11 +724,11 @@ textarea {
     width: 200px;
     height: 160px;
     border-radius: 15px;
-    min-height: 180px;
     background: rgba(255, 255, 255, 0.1);
-    display: flex;
+    display: flex; 
     justify-content: center;
     align-items: center;
+    left: -6.5%;
     backdrop-filter: blur(15px);
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
     border: 2px solid rgba(255, 255, 255, 0.3);
@@ -739,29 +739,18 @@ textarea {
   }
 
   .box .square:nth-child(2) {
-    top: 120px;
-    right: 150px;
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    z-index: 4;
-    /* bottomleft */
+    display: none;
   }
 
   .box .square:nth-child(1) {
-    top: -50px;
-    right: -47px;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    /* righttop */
+   display: none;
   }
 
   .container2 h2 {
     color: #e4cff1;
     position: absolute;
     top: 16%;
-    left: 37%;
+    left: 34%;
     font-family: 'comfortaa';
     font-size: 20px;
     font-weight: 800;
@@ -774,7 +763,11 @@ textarea {
     animation: work 6s linear infinite;
     cursor: default;
   }
-
+  @keyframes work {
+    50% {
+      left: 39%;
+    }
+  }
   .container2 .color:nth-child(1) {
     top: 0px;
     width: 0px;
@@ -783,9 +776,7 @@ textarea {
     border-bottom-left-radius: 500px;
     border-bottom-right-radius: 500px;
   }
-  .container2{
-    background: #485563;
-}
+ 
   .container2 .color:nth-child(3) {
     bottom: px;
     right: px;
@@ -796,12 +787,6 @@ textarea {
 
   .container2 .color {
     filter: blur(0px);
-  }
-
-  @keyframes work {
-    50% {
-      left: 42%;
-    }
   }
 
   .multitext {
@@ -822,7 +807,7 @@ textarea {
     top: 96%;
     left: 31%;
     font-family: 'poppins';
-    color: #4c494d;
+    color: #ffffff;
   }
 
   form h2 {
@@ -871,7 +856,7 @@ textarea {
   .menuiconn-e {
     position: absolute;
     right: 10%;
-    top: 3.7%;
+    top: 4.4%;
     width: 25px;
     display: block;
   }
@@ -902,17 +887,25 @@ textarea {
     overflow: hidden;
     transition: 0.5s ease;
   }
-
+  .cpyl a p{
+    color: #ffffff;
+  }
+.con2 p{
+  letter-spacing: 1.5px;
+}
   .container4 {
     overflow: hidden;
     background:#485563;
   }
 
   .container2 {
-    overflow: hidden;
-  }
+    overflow: hidden; 
+    background: #485563;
+  } 
 
   .container1 {
     overflow: hidden;
+    background: #485563;
   }
+
 }
