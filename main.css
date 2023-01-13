@@ -1,4 +1,6 @@
-*,*:before,*:after{
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
 }
@@ -15,6 +17,7 @@ section {
   height: 100vh;
   scroll-snap-align: start;
 }
+
 .container1 {
   width: 100%;
   height: 100vh;
@@ -61,6 +64,7 @@ section {
   background-color: #fa4d81;
   color: rgb(255, 255, 255);
 }
+
 .about {
   width: 43%;
   height: 50%;
@@ -464,13 +468,16 @@ form h2 {
   width: 27px;
   height: 30px;
 }
+
 .socials22 {
   visibility: hidden;
 }
+
 .active22 {
   visibility: hidden;
   display: none;
 }
+
 .popup {
   width: 45%;
   height: 100vh;
@@ -586,6 +593,19 @@ textarea {
     background: #fffdfd;
   }
 
+  .wrapper {
+    width: 100%;
+    height: 100vh;
+    overflow-y: none;
+    scroll-snap-type: none;
+  }
+
+  section {
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: none;
+  }
+
   #preloader {
     background: #ffffff url(./assets/loading.gif) no-repeat center center;
     background-size: 42%;
@@ -616,7 +636,7 @@ textarea {
     border-radius: 50%;
     top: 34%;
     left: -8%;
-    background: linear-gradient(45deg, #cf8bfa, rgb(246, 40, 40));
+    background: linear-gradient(45deg, #cf8bfa, rgb(244, 73, 73));
     animation: obj 6s linear infinite;
   }
 
@@ -636,6 +656,7 @@ textarea {
     font-size: 30px;
     font-weight: 800;
     font-family: 'poppins, sans-serif;
+
   }
 
   .about h1 {
@@ -643,7 +664,7 @@ textarea {
   }
 
   .about {
-    width: 64%;
+    width: 70%;
     height: 50%;
   }
 
@@ -661,6 +682,10 @@ textarea {
   .active22 {
     visibility: visible;
     display: block;
+  }
+
+  .active33 {
+    display: none;
   }
 
   .navel ul li {
@@ -740,7 +765,7 @@ textarea {
     font-family: 'comfortaa';
     font-size: 20px;
     font-weight: 800;
-    background-color: #fe5e61;
+    background-color: #686367;
     padding: 9px;
     border-radius: 10px;
     backdrop-filter: blur(15px);
@@ -750,6 +775,29 @@ textarea {
     cursor: default;
   }
 
+  .container2 .color:nth-child(1) {
+    top: 0px;
+    width: 0px;
+    height: 0px;
+    background: #f76acd;
+    border-bottom-left-radius: 500px;
+    border-bottom-right-radius: 500px;
+  }
+  .container2{
+    background: #485563;
+}
+  .container2 .color:nth-child(3) {
+    bottom: px;
+    right: px;
+    width: 0px;
+    height: 0px;
+    background: #f76acd;
+  }
+
+  .container2 .color {
+    filter: blur(0px);
+  }
+
   @keyframes work {
     50% {
       left: 42%;
@@ -757,7 +805,7 @@ textarea {
   }
 
   .multitext {
-    color: rgb(58, 57, 67);
+    color: rgb(0, 0, 0);
   }
 
   .box2 {
@@ -857,6 +905,7 @@ textarea {
 
   .container4 {
     overflow: hidden;
+    background:#485563;
   }
 
   .container2 {
