@@ -148,7 +148,7 @@ section {
 }
 
 #preloader {
-  background: #f3e1e1  url(./assets/loading.gif) no-repeat center center;
+  background: #ffffff  url(./assets/loading.gif) no-repeat center center;
   background-size: 16%;
   height: 100vh;
   width: 100%;
@@ -610,7 +610,7 @@ textarea {
   }
 
   #preloader {
-    background: #f3e1e1 url(./assets/loading.gif) no-repeat center center;
+    background: #ffffff url(./assets/loading.gif) no-repeat center center;
     background-size: 42%;
     height: 100vh;
     width: 100%;
