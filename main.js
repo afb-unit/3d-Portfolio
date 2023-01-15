@@ -42,3 +42,9 @@ var menulist = document.getElementById("menulistt");
 }
 const audio = new Audio();
 audio.src = "./assets/glass sound effect.mp3";
+
+setTimeout(function(){
+  var msg = document.getElementById("loading-sp");
+  msg.parentNode.removeChild(msg);
+},42000
+  );
