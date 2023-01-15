@@ -43,6 +43,24 @@ section {
   scroll-snap-align: start;
 }
 
+.hide {
+  width: 40%;
+  height: 20%;
+  background-color: #fa8282;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.hide2 {
+  width: 43%;
+  height: 10%;
+  background-color: #ffffff;
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+}
+
 .container1 {
   width: 100%;
   height: 100vh;
@@ -50,6 +68,7 @@ section {
   background-size: 200% 200%;
   animation: gradient 6s ease-in-out infinite;
   backdrop-filter: blur(150px);
+  overflow: hidden;
 }
 
 .nav {
@@ -276,7 +295,6 @@ section {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  /* righttop */
 }
 
 .box .square:nth-child(2) {
@@ -286,7 +304,6 @@ section {
   height: 150px;
   border-radius: 50%;
   z-index: 4;
-  /* bottomleft */
 }
 
 .box .square:nth-child(3) {
@@ -295,7 +312,6 @@ section {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  /* lefttop */
 }
 
 .box .square:nth-child(4) {
@@ -632,13 +648,11 @@ textarea {
     width: 100%;
     height: 100vh;
     overflow-y: none;
-    /* scroll-snap-type: y mandatory; */
   }
 
   section {
     width: 100%;
     height: 100vh;
-    /* scroll-snap-align: start; */
   }
 
   #preloader {
@@ -660,6 +674,16 @@ textarea {
   }
 
   #section2 {
+    display: none;
+  }
+
+  .hide {
+    visibility: hidden;
+    display: none;
+  }
+
+  .hide2 {
+    visibility: hidden;
     display: none;
   }
 
@@ -751,6 +775,15 @@ textarea {
   .navel ul li a.active {
     color: #d59a9a;
     font-size: 13px;
+  }
+
+  .topline::after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 32px;
+    bottom: 9px;
+    background-color: rgb(255, 255, 255);
   }
 
   .container2 .box .square:nth-child(3) {
