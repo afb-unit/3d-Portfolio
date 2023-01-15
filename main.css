@@ -5,6 +5,31 @@
   padding: 0;
 }
 
+#loading-sp {
+  width: 100%;
+  height: 88%;
+  background: #ffffff url(./assets/blue-glass.gif) no-repeat center;
+  z-index: 55;
+  position: fixed;
+  background-size: 80%;
+  position: absolute;
+}
+
+#loading-sp p {
+  font-family: 'poppins';
+  font-weight: 500;
+  font-size: 18px;
+  position: absolute;
+  bottom: 37px;
+  left: 45%;
+  letter-spacing: 1px;
+  z-index: 55;
+}
+
+.spline {
+  position: relative;
+}
+
 .wrapper {
   width: 100%;
   height: 100vh;
@@ -17,6 +42,7 @@ section {
   height: 100vh;
   scroll-snap-align: start;
 }
+
 .container1 {
   width: 100%;
   height: 100vh;
@@ -140,10 +166,11 @@ section {
 
 .spline {
   width: 45%;
-  height: 80%;
+  height: 95%;
   position: absolute;
   top: 13%;
   left: 55%;
+  overflow: hidden;
 }
 
 #preloader {
@@ -660,6 +687,14 @@ textarea {
     display: none;
   }
 
+  #loading-sp {
+    display: none;
+  }
+
+  #loading-sp p {
+    display: none;
+  }
+
   .about h1 span {
     font-size: 30px;
     font-weight: 800;
@@ -975,5 +1010,6 @@ textarea {
     overflow: hidden;
     background: #485563;
   }
+
 
 }
