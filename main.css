@@ -11,7 +11,7 @@
   background: #ffffff url(./assets/blue-glass.gif) no-repeat center;
   z-index: 55;
   position: fixed;
-  background-size: 80%;
+  background-size: 90%;
   position: absolute;
 }
 
@@ -20,7 +20,7 @@
   font-weight: 500;
   font-size: 18px;
   position: absolute;
-  bottom: 37px;
+  top: 60px;
   left: 45%;
   letter-spacing: 1px;
   z-index: 55;
