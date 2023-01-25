@@ -866,37 +866,11 @@ textarea {
       top: 8%;
     }
   }
-
-
-  .nav-links {
-    position: absolute;
-    right: 0;
-    height: 85vh;
-    width: 100%;
-    top: 15vh;
-    background-color: #f0cfff;
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* display: none; */
-    font-family: "Montserrat";
-    position: fixed;
+  .nav-links{
+    visibility:hidden;
   }
-
-
-  .nav-links a {
-    color: #485563;
-  }
-
-  #nav-links .active {
-    background-color: transparent;
-    color: #485563;
-  }
-
   .burger {
-    display: block;
-    cursor: pointer;
+   visibility:hidden;
   }
 
   .three {
