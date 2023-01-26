@@ -33,7 +33,7 @@ section {
 }
 
 #loading-sp1{
-    background: #FCFEFCurl(./assets/loading.gif) no-repeat center center;
+    background: #FCFEFC url(./assets/loading.gif) no-repeat center center;
     background-size: 16%;
     height: 100vh;
     width: 100%;
@@ -41,7 +41,7 @@ section {
     position: fixed;
   }
   #preloader {
-    background: #FCFEFCurl(./assets/loading.gif) no-repeat center center;
+    background: #FCFEFC url(./assets/loading.gif) no-repeat center center;
     background-size: 16%;
     height: 100vh;
     width: 100%;
