@@ -25,29 +25,54 @@ section {
   background: linear-gradient(-45deg,
       #ffffff,
       #ffffff,
-      rgb(255, 255, 255),
+      #ffffff,
       #ffffff,
       #ffffff,
       #e93e52);
   background-size: 200% 200%;
 }
 
-#loading-sp1{
-    background: #FCFEFC url(./assets/loading.gif) no-repeat center center;
-    background-size: 16%;
-    height: 100vh;
-    width: 100%;
-    z-index: 100;
-    position: fixed;
-  }
-  #preloader {
-    background: #FCFEFC url(./assets/loading.gif) no-repeat center center;
-    background-size: 16%;
-    height: 100vh;
-    width: 100%;
-    z-index: 100;
-    position: fixed;
-  }
+#loading-sp1 {
+  background: #FCFEFC url(./assets/loading.gif) no-repeat center center;
+  background-size: 16%;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+}
+
+#preloader {
+  background: #FCFEFC url(./assets/loading.gif) no-repeat center center;
+  background-size: 16%;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+}
+
+
+.container-b {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.hide-b {
+  width: 16%;
+  height: 12vh;
+  background-color: #2a2c2d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'poppins';
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+  border-radius: 15px;
+  color: white;
+}
+
+
 .mask {
   position: absolute;
   z-index: 11;
@@ -273,26 +298,19 @@ ul li a:hover {
   letter-spacing: 1px;
   font-size: 13px;
 }
-.container-b {
-  width: 100%;
-  height: 100vh;
-  position: relative;
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
 
-.hide-b {
-  width: 16%;
-  height: 12vh;
-  background-color: #2a2c2d;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'poppins';
-  position: absolute;
-  right: 2px;
-  bottom: 2px;
-  border-radius: 15px;
-  color: white;
+.toggle .line2 {
+  opacity: 0;
 }
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
 #preloader {
   background: #ffffff url(./assets/loading.gif) no-repeat center center;
   background-size: 16%;
@@ -549,10 +567,6 @@ ul li a:hover {
   top: 11px;
 }
 
-/* form {
-  position: relative;
-} */
-
 form .inp {
   width: 100%;
   margin-top: 20px;
@@ -786,7 +800,7 @@ textarea {
   }
 
   .container1 {
-    background: #ffffff;
+    background: #485563;
     overflow: hidden;
   }
 
@@ -873,11 +887,43 @@ textarea {
       top: 8%;
     }
   }
-  .nav-links{
-    visibility:hidden;
+
+  .nav-links {
+    visibility: hidden;
   }
+
   .burger {
-   visibility:hidden;
+    visibility: hidden;
+  }
+
+  /* .nav-links {
+    position: absolute;
+    right: 0;
+    height: 85vh;
+    width: 100%;
+    top: 15vh;
+    background-color: #f0cfff;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat";
+    position: fixed;
+  }
+
+
+  .nav-links a {
+    color: #485563;
+  } */
+
+  #nav-links .active {
+    background-color: transparent;
+    color: #485563;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
   }
 
   .three {
