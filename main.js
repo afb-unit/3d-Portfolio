@@ -24,10 +24,10 @@ setTimeout(function(){
   });
   //auto type
   var typingeffect = new Typed(".multitext", {
-    strings: ["Λᶠ Ꮦ ԹՅ", "a Coder", "a Designer"],
+    strings: ["Λᶠ Ꮦ ԹՅ", "a Developer", "a Designer"],
     loop: true,
-    typeSpeed: 100,
-    backSpeed: 80,
+    typeSpeed: 110,
+    backSpeed: 130,
     backdelay: 1500
   })
 
