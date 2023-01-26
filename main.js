@@ -7,7 +7,7 @@ window.addEventListener("load", function(){
 setTimeout(function(){
     var msg = document.getElementById("loading-sp1");
     msg.parentNode.removeChild(msg);
-    },45000
+    },48000
     );
   //start
   document.addEventListener('DOMContentLoaded', () => {
