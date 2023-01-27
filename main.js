@@ -24,7 +24,7 @@ setTimeout(function(){
   });
   //auto type
   var typingeffect = new Typed(".multitext", {
-    strings: ["a Developer", "Λᶠ Ꮦ ΛՅ", "a Designer"],
+    strings: ["a Developer", "Λᶠ Ꮦ Λß", "a Designer"],
     loop: true,
     typeSpeed: 110,
     backSpeed: 130,
