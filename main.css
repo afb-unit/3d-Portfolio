@@ -100,7 +100,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
   border-radius: 29px;
-  transition: all 0.1s ease;
+  transition: all 500ms ease;
 }
 
 .maskbt:hover {
